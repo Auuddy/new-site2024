@@ -1,6 +1,6 @@
 *Certifique-se de ter inserido um ID do Discord válido e de que o usuário está no servidor Discord da Lanyard para que possamos puxar as info do Discord do usuário. discord.gg/lanyard*
 
-# **by: .xr7.
+by: ecdz
 
  # PREVIEW
 ![print](https://media.discordapp.net/attachments/1228000235519737908/1229171767143039148/vivaldi_i5jJPyJ5u0.png?ex=662eb66a&is=661c416a&hm=e79f627ff576065c2f5d2f3b73fee94d52283f5f092f6c26f3211722df3cee36&=&format=webp&quality=lossless) 
