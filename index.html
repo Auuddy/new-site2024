@@ -1,0 +1,81 @@
+
+<script>
+    window.onload = function () {
+    fetch("https://api.lanyard.rest/v1/users/846381470406148116")
+      .then(response => response.json())
+      .then(w => {
+        const info = w.data.discord_user;
+        const profileImg = document.querySelector('.pfp');
+        const nameElement = document.querySelector('.userr');
+        profileImg.src = info.avatar ? `https://cdn.discordapp.com/avatars/${info.id}/${info.avatar}.${info.avatar.startsWith("a_") ? 'gif' : 'png'}?size=512` : "https://cdn.discordapp.com/attachments/846381470406148116/846381470406148116/image.png";
+        nameElement.textContent = info.global_name;
+      })
+      .catch(error => { });
+  };
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:description" content="xeraca.xyz" />
+    <meta property="og:image" content="https://cdn.discordapp.com/emojis/877177783594393670.gif?size=96&quality=lossless"/>
+    <meta property="og:title" content="scry" />
+    <link rel="icon" href="https://cdn.discordapp.com/emojis/875338022600708106.gif?size=32&quality=lossless" type="gif"/>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/links.js"></script>
+    <title></title>
+</head>
+<body>
+  
+    <main>
+        <nav>
+
+
+            
+            </div>
+            <div class="name">
+                <h1 onclick="scry()"><b>Scr</b>y</h1>
+            </div>
+        </nav>
+
+        <section id="f">
+            <div class="center">
+                <div class="image">
+                    <a href="https://discordapp.com/users/1055875686713266179" target=”_blank”>
+                        <img src="/src/assets/discord-logo.png" id="avatar" class="pfp">
+                    </a>
+                </div>
+
+                <h1 id="username" class="userr">
+                    xr7
+                </h1>
+
+                <hr class="rounded">
+                <div class="socials">
+                 
+                    </svg>
+
+                    <svg id="spotify" onclick="spotify()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                    </svg>
+
+                
+                </div>
+            </div>
+     
+        </section>
+    </main>
+</body>
+
+<script src="src/js/api.js"></script>
+<script src="src/js/title.js"></script>
+<script src="src/js/block.js"></script>
+   
+
+<video id="video" autoplay="" loop=""><source src="src/assets/videoeva.mp4" type="video/webm"></video>
+
+   
